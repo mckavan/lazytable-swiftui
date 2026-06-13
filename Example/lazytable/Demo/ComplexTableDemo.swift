@@ -275,12 +275,14 @@ struct ComplexTableDemo: View {
         }
 
         private var background: Color {
+            // Pinned cells overlay the scrolling content, so every cell background
+            // must be fully opaque — a translucent fill lets cells bleed through.
             if column == 1 {
                 Color(.systemGray6)
             } else if dataRow.isMultiple(of: 2) {
                 Color(.systemBackground)
             } else {
-                Color(.systemGray6).opacity(0.4)
+                Color(white: 0.972)
             }
         }
     }

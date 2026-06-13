@@ -16,7 +16,7 @@ thousands of cells scroll smoothly. It's a SwiftUI port of the Kotlin/Compose
 
 ### Pinned groups, spans & image cells
 
-<img width="300" height="652" alt="Complex table demo" src="https://github.com/user-attachments/assets/477a9d45-9058-4120-9fac-a15f1a207d95" />
+<img width="300" height="652" alt="Complex table demo" src="https://github.com/user-attachments/assets/02b68979-351e-461b-8d4d-f1c8cec76184" />
 
 ## Requirements
 
