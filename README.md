@@ -10,17 +10,21 @@ thousands of cells scroll smoothly. It's a SwiftUI port of the Kotlin/Compose
 
 ## Demos
 
-| Pinned header, column & footer | Pinned groups, spans & image cells |
-| :---: | :---: |
-| <img width="300" height="652" alt="Pinned table demo" src="https://github.com/user-attachments/assets/477a9d45-9058-4120-9fac-a15f1a207d95" /> | <img width="300" height="652" alt="Complex table demo" src="https://github.com/user-attachments/assets/49fad5ff-00f0-48b0-aad9-02e052cafb81" /> |
+### Pinned header, column & footer
+
+<img width="300" height="652" alt="Pinned table demo" src="https://github.com/user-attachments/assets/49fad5ff-00f0-48b0-aad9-02e052cafb81" />
+
+### Pinned groups, spans & image cells
+
+<img width="300" height="652" alt="Complex table demo" src="https://github.com/user-attachments/assets/477a9d45-9058-4120-9fac-a15f1a207d95" />
 
 ## Requirements
 
 - iOS 18.0+ / macOS 15.0+
 - Swift 6 toolchain (Xcode 16+)
 
-The library is built entirely on SwiftUI (`ScrollView` + `onScrollGeometryChange`
-+ `ScrollPosition`) with no UIKit dependency, and compiles clean under the
+The library is built entirely on SwiftUI (`ScrollView`, `onScrollGeometryChange`,
+and `ScrollPosition`) with no UIKit dependency, and compiles clean under the
 Swift 6 language mode (full data-race safety).
 
 ## Installation
@@ -31,19 +35,6 @@ In Xcode: **File ▸ Add Package Dependencies…** and enter:
 
 ```
 https://github.com/mckavan/lazytable-swiftui
-```
-
-Or add it to your `Package.swift`:
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/mckavan/lazytable-swiftui", from: "1.0.0"),
-],
-targets: [
-    .target(name: "MyApp", dependencies: [
-        .product(name: "LazyTable", package: "lazytable-swiftui"),
-    ]),
-]
 ```
 
 Then `import LazyTable`.
