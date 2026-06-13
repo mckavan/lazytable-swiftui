@@ -1,0 +1,12 @@
+LazyTable for SwiftUI
+Copyright (c) 2026 mckavan
+
+This library is an independent SwiftUI reimplementation inspired by, and
+API-compatible in spirit with, the Kotlin/Compose Multiplatform library
+"lazytable" by Oleksandr Balan:
+
+    https://github.com/oleksandrbalan/lazytable
+
+No source code from the original project is included or derived; the layout
+semantics (pinned rows/columns, footer, spans, per-axis sizing) were
+re-implemented from scratch on top of SwiftUI's ScrollView.
